@@ -1,0 +1,18 @@
+import Project from "./Project";
+function About() {
+  return (
+    <div className="bg-[#121e28] p-[5px] 2xl:px-[200px] xl:px-[100px] border-red-400 border text-center">
+      <h2 className="text-2xl text-white font-bold">About Me</h2>
+      <p className="sm:w-xl m-auto text-sm text-white pt-[28px]">
+        I started my Web Development journey from my College 1st year,Thout
+        that, I learned to love the process of crating from scratch,since
+        then,this has lead to me Web Development as it fulfills my love for
+        learning and building things.
+      </p>
+
+      <Project />
+    </div>
+  );
+}
+
+export default About;
