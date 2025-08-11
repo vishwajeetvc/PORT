@@ -1,9 +1,11 @@
-
+import Hero from "./componenets/Hero"
+import Navbar from "./componenets/Navbar"
 
 function App() {
   return (
     <div>
-      <p className="bg-red-400 lg:">hello</p>
+      <Navbar/>
+      <Hero/>
     </div>
   )
 }
