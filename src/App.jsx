@@ -1,8 +1,10 @@
 
+import Footer from "./componenets/footet"
 
 function App() {
   return (
     <div>
+      <Footer />
     </div>
   )
 }
