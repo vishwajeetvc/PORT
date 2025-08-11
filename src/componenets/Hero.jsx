@@ -6,7 +6,6 @@ function Button({label, dark}){
   </>
 
 }
-
 function Hero() {
   return (
     <div className={ `bg-[#121e28]  h-[100vh] text-white` }>
@@ -14,7 +13,7 @@ function Hero() {
       <div className={
         `text-center px-5  pt-[40px] flex flex-col gap-[20px]`
       }>
-        <h2 className="font-bold text-4xl">Hello<span className="text-[#f66f5c] text-4xl">.</span></h2>
+        <h2 className="font-bold text-4xl">Hello<span className="bg-[#f66f5c] rounded-full mx-1 w-[10px] inline-block h-[10px] relative"></span></h2>
         <p className="text-3xl relative flex flex-col items-center gap-2 z-0">
           <span>I'm Vishwajeet</span>
           <span className="w-[150px] h-[3px] bg-[#f66f5c]"></span>
