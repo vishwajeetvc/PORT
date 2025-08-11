@@ -3,7 +3,7 @@ export default function Project() {
     <div className=" flex align-center justify-center gap-[80px] mt-[30px]">
       <div>
         <h1 className="text-white font-bold text-2xl">
-          10 <span className="text-3xl text-red-400">&#43;</span>
+          10<span className="text-3xl text-red-400">&#43;</span>
         </h1>
         <p className="text-white">
           Completed <br></br>Projects
@@ -12,7 +12,7 @@ export default function Project() {
       <div>
         <h1 className="text-white font-bold text-2xl">
           {" "}
-          1 <span className="text-3xl text-red-400">&#43;</span>
+          01<span className="text-3xl text-red-400">&#43;</span>
         </h1>
         <p className="text-white">
           Year of <br></br>Experience
