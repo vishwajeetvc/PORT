@@ -1,9 +1,11 @@
+import Skill_Slider from "./componenets/Skill_Slider"
 
 
 function App() {
   return (
     <div>
-      <p className="bg-red-400 lg:">hello</p>
+
+      <Skill_Slider/>
     </div>
   )
 }
