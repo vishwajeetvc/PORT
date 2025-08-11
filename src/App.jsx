@@ -10,7 +10,7 @@ function App() {
     <div>
       <Navbar/>
       <Hero/>
-      {/*<Skill_Slider/>*/}
+      <Skill_Slider/>
       <About/>
       <Footer />
     </div>
