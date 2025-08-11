@@ -4,7 +4,7 @@ import { div } from 'framer-motion/client'
 
 function Skill_Slider() {
     return (
-        <div className="bg-[#17232d] ">
+        <div className="bg-[#17232d] overflow-hidden">
             <motion.div
                 className=" text-[#a0a5aa] text-xl p-4 px-[100px]"
                 animate={{ x: ["100%", "-100%"] }}
