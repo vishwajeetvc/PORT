@@ -10,7 +10,7 @@ function Button({label, dark}){
 function Hero() {
   return (
     <div className={ `
-      bg-[#121e28] h-[calc(100vh-142px)] px-5 
+      bg-[#121e28] h-[calc(100vh-200px)] lg:h-[calc(100vh-145px)] px-5 
       text-white flex flex-col lg:flex-row items-center justify-end gap-[20px] lg:gap-auto
       lg:justify-around lg:items-center 2xl:px-[200px] xl:px-[100px] `}>
 
