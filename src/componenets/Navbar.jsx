@@ -11,7 +11,7 @@ function Navbar() {
   const stopPropagation = e => e.stopPropagation();
 
   return (
-    <div className=" text-white px-5 py-5 relative flex items-center justify-between bg-[#121e28] 2xl:px-[200px] xl:px-[100px] ">
+    <div className=" text-white px-5 py-5 relative flex items-center justify-between bg-[#121e28] 2xl:px-[200px] xl:px-[100px]">
       <div className="font-bold ">
         Vishwajeet Kumar
       </div>
