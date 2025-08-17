@@ -38,6 +38,21 @@ function Hero() {
           `absolute h-[240px] w-[240px] lg:w-[500px] lg:h-[500px] 2xl:w-[600px] 2xl:h-[600px] 
           border-[20px] lg:border-[35px] top-[60%] left-[50%] translate-[-50%] border-[#f66f5c] bg-[#121e28] rounded-full`
         }></span>
+
+        <div className="absolute w-[100px] h-[100px] left-[-40px] rotate-180 top-[70px] lg:top-[90px]"> 
+          <span className="inline-block top-[50px] lg:top-auto w-[50px] h-[10px] lg:w-[100px] lg:h-[25px] outline-2 outline-[#f66f5c] skew-y-[20deg] absolute"></span>
+          <span className={`inline-block w-[50px] h-[10px] lg:w-[100px] 
+                lg:h-[25px] outline-2 bg-[#f66f5c]  outline-[#f66f5c] skew-y-[-20deg] 
+                absolute top-[70px] lg:top-[40px]`}></span>
+        </div>
+
+        <div className="absolute w-[100px] h-[100px] right-[-30px] lg:right-[-45px] bottom-0 lg:bottom-[-10px] "> 
+          <span className="inline-block top-[50px] lg:top-auto w-[50px] h-[10px] lg:w-[100px] lg:h-[25px] outline-2 outline-[#f66f5c] skew-y-[20deg] absolute"></span>
+          <span className={`inline-block w-[50px] h-[10px] lg:w-[100px] 
+                lg:h-[25px] outline-2 bg-[#f66f5c]  outline-[#f66f5c] skew-y-[-20deg] 
+                absolute top-[70px] lg:top-[40px]`}></span>
+        </div>
+
         <span 
           className={`absolute w-[150px] inline-block h-[150px] top-[40%] rounded-full shadow-[0_0_200px_10px_#f66f5c] lg:shadow-[0_0_800px_100px_#f66f5c]`}></span>
         <div 
