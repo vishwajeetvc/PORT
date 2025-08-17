@@ -1,4 +1,5 @@
-import { image } from "../assets/assets.js"
+import { aa } from "../assets/assets.js"
+import { img } from "../assets/assets.js"
 
 function Button({label, dark}){
   return <>
@@ -41,7 +42,7 @@ function Hero() {
           className={`absolute w-[150px] inline-block h-[150px] top-[40%] rounded-full shadow-[0_0_200px_10px_#f66f5c] lg:shadow-[0_0_800px_100px_#f66f5c]`}></span>
         <div 
           style={{
-            backgroundImage:`url(${image})`,
+            backgroundImage:`url(${img})`,
             backgroundPosition:'center',
             backgroundRepeat:'no-repeat',
           }}
