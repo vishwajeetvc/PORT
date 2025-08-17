@@ -39,7 +39,7 @@ function Hero() {
           border-[20px] lg:border-[35px] top-[60%] left-[50%] translate-[-50%] border-[#f66f5c] bg-[#121e28] rounded-full`
         }></span>
         <span 
-          className={`absolute w-[150px] inline-block h-[150px] top-[40%] rounded-full shadow-[0_0_200px_10px_#f66f5c] lg:shadow-[0_0_800px_100px_#f66f5c]`}></span>
+          className={`absolute w-[100px] inline-block h-[100px] top-[40%] rounded-full shadow-[0_0_200px_30px_#f66f5c] lg:shadow-[0_0_800px_100px_#f66f5c]`}></span>
         <div 
           style={{
             backgroundImage:`url(${img})`,
