@@ -13,7 +13,11 @@ function App() {
       <Navbar name={data.name}/>
       <Hero/>
       <Skill_Slider skills={data.coding_skills} />
-      <About />
+      <About 
+        intro={data.intro}
+        cp={data.completedProjects}
+        exp={data.yearsOfExp}
+        />
       <Footer />
     </div>
   )

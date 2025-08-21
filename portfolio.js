@@ -4,7 +4,7 @@ const data = {
   coding_skills : ['HTML', 'CSS', 'JavaScript', 'React.js','TailwindCSS', 'Node.js', 'Git', 'Github'],
   soft_skills : ['Web-Developer', 'Problem Solver', 'Team Player'],
   resumeLink : 'link',
-  intro : 'I started my Web Development journey from my College 1st year,Thout that, I learned to love the process of creating from scratch,since then,this has lead to me Web Development as it fulfills my love for learning and building things.',
+  intro : 'I Started My Web Development journey from my College 1st year, Thout that, I learned to love the process of creating from scratch, since then, This has lead to me Web Development as it Fulfills my love for Learning and building things.',
   socialMedia : [
     {name : "linkedIn", url : "somethi.com"},
     {name : "github", url : "somethi.com"},
