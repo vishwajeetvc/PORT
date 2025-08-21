@@ -1,6 +1,3 @@
-
-
-
 function PersonlaProject({projects}){
     return(
         <div className="bg-[#121e28] px-5 2xl:px-[200px] py-[20px] pb-[80px] xl:px-[100px] text-white">
@@ -18,7 +15,7 @@ function PersonlaProject({projects}){
 function Project({project, imgPos}){
     // const image = data.image
     return(<>
-        <div className={` outline-white/20 shadow-lg lg:shadow-none lg:py-6 shadow-gray-400/20 flex lg:my-3  overflow-clip rounded-xl flex-col-reverse lg:gap-15 lg:${imgPos == 'left'? "flex flex-row-reverse":"flex-row"} justify-between`}>
+        <div className={`outline-white/20 shadow-lg lg:shadow-none lg:py-6 shadow-gray-400/20 flex lg:my-3 overflow-clip rounded-xl flex-col-reverse lg:gap-15 ${imgPos == 'left'? "lg:flex-row ":"lg:flex-row-reverse"} justify-between`}>
             <ProjectDes project={project} />
             <div className="lg:outline-2 overflow-clip outline-white/20">
                 <img src={project.img} />
