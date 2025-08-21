@@ -82,7 +82,7 @@ function Hero() {
           className={`absolute w-[50px] inline-block h-[150px] top-[30%] rounded-full shadow-[0_0_200px_20px_#f66f5c] lg:shadow-[0_0_800px_100px_#f66f5c]`}></span>
         <div 
           style={{
-            backgroundImage:`url(${kk})`,
+            backgroundImage:`url(${img})`,
             backgroundPosition:'center center',
             backgroundRepeat:'no-repeat',
           }}

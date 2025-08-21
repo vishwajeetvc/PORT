@@ -1,4 +1,4 @@
-export default function Project({cp,exp}) {
+export default function Exp({cp,exp}) {
   return (
     <div className=" flex align-center justify-center lg:justify-start gap-[20px] lg:gap-[80px] mt-[30px]">
       <div>
