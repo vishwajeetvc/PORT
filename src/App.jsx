@@ -12,7 +12,7 @@ function App() {
     <div>
       <Navbar name={data.name}/>
       <Hero/>
-      <Skill_Slider />
+      <Skill_Slider skills={data.coding_skills} />
       <About />
       <Footer />
     </div>

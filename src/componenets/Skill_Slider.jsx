@@ -1,8 +1,11 @@
 import React from 'react'
+import { useState } from 'react'
 import { motion } from "framer-motion"
 import { div } from 'framer-motion/client'
 
-function Skill_Slider() {
+function Skill_Slider({ skills }) {
+    
+    console.log(skills.map(skill => <span>{skill}</span>))
     return (
         <div className="bg-[#17232d] overflow-hidden relative">
             <motion.div
@@ -11,16 +14,11 @@ function Skill_Slider() {
                 transition={{ duration: 20, ease: "linear", repeat: Infinity }}
             >
                 <div className=" flex gap-[50px] sm:justify-between ">
-                    <span className="border-white-400">HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>React.js</span>
-                    <span>Node.js</span>
-                    <span>Git</span>
-                    <span>Github</span>
+                    {skills.map(skill => <span key={skill}>{skill}</span>)}
                 </div>
 
             </motion.div>
+
             {/* <motion.div
                 className="h-1 bg-blue-500 rounded-full m-auto"
                 initial={{ width: "8px" }}   // Small dot
