@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <Navbar name={data.name}/>
-      <Hero/>
+      <Hero name={data.name} avatar={data.avatar}/>
       <Skill_Slider skills={data.coding_skills} />
       <About 
         intro={data.intro}

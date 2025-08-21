@@ -1,6 +1,8 @@
+import { img } from "./src/assets/assets";
 
 const data = {
   name : "Vishwajeet Kumar",
+  avatar : img,
   coding_skills : ['HTML', 'CSS', 'JavaScript', 'React.js','TailwindCSS', 'Node.js', 'Git', 'Github'],
   soft_skills : ['Web-Developer', 'Problem Solver', 'Team Player'],
   resumeLink : 'link',

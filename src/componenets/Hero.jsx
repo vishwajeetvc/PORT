@@ -1,8 +1,3 @@
-import { aa } from "../assets/assets.js"
-import { pp } from "../assets/assets.js"
-import { kk } from "../assets/assets.js"
-import { img } from "../assets/assets.js"
-
 function Button({label, dark}){
   return <>
     <button className={`${!dark ? "bg-[#f66f5c]" : "border-2 border-[#f66f5c]"} font-bold px-4 py-3 rounded `}>
@@ -10,7 +5,7 @@ function Button({label, dark}){
     </button>
   </>
 }
-function Hero() {
+function Hero({name, avatar}) {
   return (
     <div className={ `
       bg-[#121e28] h-[calc(100vh-200px)] lg:h-[calc(100vh-145px)]  py-4
@@ -23,7 +18,7 @@ function Hero() {
           <span className="bg-[#f66f5c] rounded-full mx-1 w-[10px] inline-block h-[10px] relative"></span>
         </h2>
         <p className="text-3xl lg:text-5xl relative flex flex-col items-center lg:items-start lg:left-[100px] gap-2 z-0">
-          <span className="font-[Playwrite_CA] font-thin lg:py-5">I'm Vishwajeet</span>
+          <span className="font-[Playwrite_CA] font-thin lg:py-5">I'm {name.split(' ')[0]}</span>
           <span className="w-[150px] h-[3px] bg-[#f66f5c]"></span>
         </p>
         <h1 className="font-bold text-4xl lg:text-6xl">Web Developer</h1>
@@ -82,7 +77,7 @@ function Hero() {
           className={`absolute w-[50px] inline-block h-[150px] top-[30%] rounded-full shadow-[0_0_200px_20px_#f66f5c] lg:shadow-[0_0_800px_100px_#f66f5c]`}></span>
         <div 
           style={{
-            backgroundImage:`url(${img})`,
+            backgroundImage:`url(${avatar})`,
             backgroundPosition:'center center',
             backgroundRepeat:'no-repeat',
           }}
