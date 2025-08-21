@@ -1,6 +1,6 @@
 
 const data = {
-  name : "Kanhaiya Kumar",
+  name : "Ankit shah",
   coding_skills : ['HTML', 'CSS', 'JavaScript', 'React.js','TailwindCSS', 'Node.js', 'Git', 'Github'],
   soft_skills : ['Web-Developer', 'Problem Solver', 'Team Player'],
   resumeLink : 'link',
