@@ -1,5 +1,4 @@
-import { div } from "framer-motion/client";
-import AboutCard from "./AboutCard";
+
 
 
 function PersonlaProject({projects}){
@@ -11,8 +10,6 @@ function PersonlaProject({projects}){
             </div>
             <div className="mt-10 flex flex-wrap gap-10">
                {projects.map((project, i)=> <Project key={project.name + i} project={project} imgPos={i%2 == 0?'left':""}/>)}
-                
-
             </div>
         </div>
     )
@@ -21,7 +18,7 @@ function PersonlaProject({projects}){
 function Project({project, imgPos}){
     // const image = data.image
     return(<>
-        <div className={` outline-white/20 shadow-lg lg:shadow-none lg:p-6 shadow-gray-400/20 flex lg:my-3  overflow-clip rounded-xl flex-col-reverse lg:gap-15 lg:${imgPos == 'left'? "flex-row-reverse":"flex-row"} justify-between`}>
+        <div className={` outline-white/20 shadow-lg lg:shadow-none lg:py-6 shadow-gray-400/20 flex lg:my-3  overflow-clip rounded-xl flex-col-reverse lg:gap-15 lg:${imgPos == 'left'? "flex flex-row-reverse":"flex-row"} justify-between`}>
             <ProjectDes project={project} />
             <div className="lg:outline-2 overflow-clip outline-white/20">
                 <img src={project.img} />
