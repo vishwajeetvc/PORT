@@ -28,8 +28,8 @@ function Hero() {
         </p>
         <h1 className="font-bold text-4xl lg:text-6xl">Web Developer</h1>
         <div className=" flex justify-center lg:justify-start gap-5 lg:my-8">
-          <Button label={"Get a Project"}/>
-          <Button label={"My Resume"} dark/>
+          <Button label={"Project"}/>
+          <Button label={"Resume"} dark/>
         </div>
       </div>
       {/*image*/}
@@ -82,7 +82,7 @@ function Hero() {
           className={`absolute w-[50px] inline-block h-[150px] top-[30%] rounded-full shadow-[0_0_200px_20px_#f66f5c] lg:shadow-[0_0_800px_100px_#f66f5c]`}></span>
         <div 
           style={{
-            backgroundImage:`url(${pp})`,
+            backgroundImage:`url(${kk})`,
             backgroundPosition:'center center',
             backgroundRepeat:'no-repeat',
           }}
