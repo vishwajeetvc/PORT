@@ -5,6 +5,7 @@ import Skill_Slider from "./componenets/Skill_Slider"
 import Footer from "./componenets/footet"
 
 import data from "../portfolio"
+import PersonlaProject from "./componenets/PersonalProject"
 
 function App() {
 
@@ -18,9 +19,10 @@ function App() {
         cp={data.completedProjects}
         exp={data.yearsOfExp}
         />
+      <PersonlaProject projects={data.projects}/>
       <Footer 
-      socialMedia= {data.socialMedia}
-      name={data.name}
+        socialMedia= {data.socialMedia}
+        name={data.name}
         />
     </div>
   )

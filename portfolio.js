@@ -1,6 +1,6 @@
 
 const data = {
-  name : "Kanhaiya Kumar",
+  name : "Vishwajeet Kumar",
   coding_skills : ['HTML', 'CSS', 'JavaScript', 'React.js','TailwindCSS', 'Node.js', 'Git', 'Github'],
   soft_skills : ['Web-Developer', 'Problem Solver', 'Team Player'],
   resumeLink : 'link',
@@ -15,20 +15,37 @@ const data = {
   projects : [
     {
       name : "Battleship",
-      img : 'image link of project',
-      technologys : ['HTML', 'CSS', 'JS'],
-      about : 'this is a project used for testing something',
-      githubLink : '',
+      img : 'https://imagineteam.com/wp-content/uploads/2023/08/blog-ai-vs-ni.jpg',
+      technologys : ['HTML', 'CSS', 'JavaScript','React.js', 'PHP', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
+      about : 'Used components of JavaScript to implement basic data structures, through the game of Battleship, Used a terminal to display ships, and tracked where ships are hit or missed.',
+      githubLink : 'https://github.com/vishwajeetvc/',
       liveLink : '',
     },
     {
       name : "Battleship",
-      img : 'image link of project',
-      technologys : ['HTML', 'CSS', 'JS'],
-      about : 'this is a project used for testing something',
-      githubLink : '',
+      img : 'https://imagineteam.com/wp-content/uploads/2023/08/blog-ai-vs-ni.jpg',
+      technologys : ['HTML', 'CSS', 'JavaScript','React.js', 'PHP', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
+      about : 'Used components of JavaScript to implement basic data structures, through the game of Battleship, Used a terminal to display ships, and tracked where ships are hit or missed.',
+      githubLink : 'https://github.com/vishwajeetvc/',
       liveLink : '',
     },
+    {
+      name : "Battleship",
+      img : 'https://imagineteam.com/wp-content/uploads/2023/08/blog-ai-vs-ni.jpg',
+      technologys : ['HTML', 'CSS', 'JavaScript','React.js', 'PHP', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
+      about : 'Used components of JavaScript to implement basic data structures, through the game of Battleship, Used a terminal to display ships, and tracked where ships are hit or missed.',
+      githubLink : 'https://github.com/vishwajeetvc/',
+      liveLink : '',
+    },
+    {
+      name : "Battleship",
+      img : 'https://imagineteam.com/wp-content/uploads/2023/08/blog-ai-vs-ni.jpg',
+      technologys : ['HTML', 'CSS', 'JavaScript','React.js', 'PHP', 'Node.js', 'Express', 'Tailwind', 'MongoDB'],
+      about : 'Used components of JavaScript to implement basic data structures, through the game of Battleship, Used a terminal to display ships, and tracked where ships are hit or missed.',
+      githubLink : 'https://github.com/vishwajeetvc/',
+      liveLink : '',
+    },
+    
   ] 
 }
 
