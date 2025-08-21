@@ -6,7 +6,7 @@ const data = {
   resumeLink : 'link',
   intro : 'I started my Web Development journey from my College 1st year,Thout that, I learned to love the process of creating from scratch,since then,this has lead to me Web Development as it fulfills my love for learning and building things.',
   socialMedia : [
-    {name : "linkedIn", url : "somethi.com"},
+    {name : "linkedIn", url : "https://www.linkedin.com/in/kanhaiya-kumar-230a68246/"},
     {name : "github", url : "somethi.com"},
     {name : "gmail", url : "somethi.com"},
   ],

@@ -14,7 +14,10 @@ function App() {
       <Hero/>
       <Skill_Slider />
       <About />
-      <Footer />
+      <Footer 
+      socialMedia= {data.socialMedia}
+      name={data.name}
+        />
     </div>
   )
 }
