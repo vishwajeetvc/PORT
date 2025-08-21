@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Navbar() {
+function Navbar({name}) {
   const [visible, setVisible] = useState(false);
 
   const toggleMenu = (e) => {
@@ -13,7 +13,7 @@ function Navbar() {
   return (
     <div className=" text-white px-5 py-5 relative flex items-center justify-between bg-[#121e28] 2xl:px-[200px] xl:px-[100px]">
       <div className="font-bold ">
-        Vishwajeet Kumar
+        {name}
       </div>
 
       {/* Visible in mobile phones only*/}
