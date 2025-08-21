@@ -18,7 +18,10 @@ function App() {
         cp={data.completedProjects}
         exp={data.yearsOfExp}
         />
-      <Footer />
+      <Footer 
+      socialMedia= {data.socialMedia}
+      name={data.name}
+        />
     </div>
   )
 }
