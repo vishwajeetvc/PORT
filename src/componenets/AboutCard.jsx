@@ -2,7 +2,7 @@ export default function AboutCard({ label, image, dot }) {
   return (
     <div>
       <div className="flex px-10 gap-5 py-2 items-center border-l-3 border-r-3 border-[#f66f5c] w-[80%] lg:w-[100%] m-auto ">
-        <img src={image} className="w-8 h-10 " />
+        <img src={image} className="w-8 h-10 " alt={label}/>
         <div>
           <p className="text-white">{label}</p>
         </div>

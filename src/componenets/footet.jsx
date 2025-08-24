@@ -1,5 +1,4 @@
-import { useState } from "react"
-
+import { github, gmail, linkedin } from "../assets/assets"
 
 function Footer({name, socialMedia}){
     return(
@@ -9,13 +8,13 @@ function Footer({name, socialMedia}){
                 <p className="text-sm md:text-base text-[#7d878f] mb-6">Designed with love, all right reserved for {name} </p>
                 <div className="flex justify-center gap-6">
                     <a href={socialMedia.find((item)=>item.name=='gmail').url} className="hover:scale-110 transition-transform">
-                        <img src="/src/assets/email.png" alt="email" className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full" />
+                        <img src={gmail} alt="email" className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full" />
                     </a>
                     <a href={socialMedia.find((item)=>item.name=='github').url} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform ">
-                        <img src="/src/assets/github (2).png" alt="github" className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full" />
+                        <img src={github} alt="github" className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full" />
                     </a>
                     <a href={socialMedia.find((item)=>item.name=='linkedIn').url} target="_blank" rel="noopener noreferrer" className="hover:scale-110 transition-transform">
-                        <img src="/src/assets/linkedin (3).png" alt="linkedin" className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full" />
+                        <img src={linkedin} alt="linkedin" className="w-8 h-8 md:w-10 md:h-10 bg-white rounded-full" />
                     </a>
                 </div>
             </div>

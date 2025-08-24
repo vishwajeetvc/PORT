@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function Navbar({name}) {
+function Navbar({name, socialMedia }) {
   const [visible, setVisible] = useState(false);
 
   const toggleMenu = (e) => {
@@ -29,10 +29,9 @@ function Navbar({name}) {
           <p
             onClick={toggleMenu}
             className=" font-bold px-4 py-5 hover:cursor-pointer">❰ Back</p>
-          <p className=" font-bold px-4 py-2">Home</p>
-          <p className=" font-bold px-4 py-2">About</p>
-          <p className=" font-bold px-4 py-2">Contact</p>
-          <p className=" font-bold px-4 py-2">Projects</p>
+          <a href={socialMedia.find(media => media.name == 'linkedIn').url}><p className=" font-bold px-4 py-2">LinkedIn</p></a>
+          <a href={socialMedia.find(media => media.name == 'github').url}><p className=" font-bold px-4 py-2">Github</p></a>
+          <a href={socialMedia.find(media => media.name == 'gmail').url}><p className=" font-bold px-4 py-2">Contact</p></a>
         </div>
       </div>
       {/* Visible in mobile phones*****************End*/}
@@ -40,10 +39,9 @@ function Navbar({name}) {
       <div className={
         `hidden lg:flex`
       }>
-        <p className=" font-bold px-4 py-2">Home</p>
-        <p className=" font-bold px-4 py-2">About</p>
-        <p className=" font-bold px-4 py-2">Contact</p>
-        <p className=" font-bold px-4 py-2">Projects</p>
+        <a href={socialMedia.find(media => media.name == 'linkedIn').url}><p className=" font-bold px-4 py-2">LinkedIn</p></a>
+        <a href={socialMedia.find(media => media.name == 'github').url}><p className=" font-bold px-4 py-2">Github</p></a>
+        <a href={socialMedia.find(media => media.name == 'gmail').url}><p className=" font-bold px-4 py-2">Contact</p></a>
       </div>
 
     </div>

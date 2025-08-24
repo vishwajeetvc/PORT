@@ -11,8 +11,8 @@ function App() {
 
   return (
     <div>
-      <Navbar name={data.name}/>
-      <Hero name={data.name} avatar={data.avatar}/>
+      <Navbar name={data.name} socialMedia={data.socialMedia}/>
+      <Hero name={data.name} avatar={data.avatar} resume={data.resumeLink}/>
       <Skill_Slider skills={data.coding_skills} />
       <About 
         intro={data.intro}

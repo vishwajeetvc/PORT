@@ -1,11 +1,12 @@
+import { motion } from 'framer-motion'
 function Button({label, dark}){
   return <>
-    <button className={`${!dark ? "bg-[#f66f5c]" : "border-2 border-[#f66f5c]"} font-bold px-4 py-3 rounded `}>
+    <button className={`${!dark ? "bg-[#f66f5c]" : "border-2 border-[#f66f5c]"} hover:cursor-pointer hover:bg-[#f66f5c] font-bold px-4 py-3 rounded `}>
       {label}
     </button>
   </>
 }
-function Hero({name, avatar}) {
+function Hero({name, avatar, resume}) {
   return (
     <div className={ `
       bg-[#121e28] h-[calc(100vh-200px)] lg:h-[calc(100vh-145px)]  py-4
@@ -18,13 +19,19 @@ function Hero({name, avatar}) {
           <span className="bg-[#f66f5c] rounded-full mx-1 w-[10px] inline-block h-[10px] relative"></span>
         </h2>
         <p className="text-3xl lg:text-5xl relative flex flex-col items-center lg:items-start lg:left-[100px] gap-2 z-0">
-          <span className="font-[Playwrite_CA] font-thin lg:py-5">I'm {name.split(' ')[0]}</span>
-          <span className="w-[150px] h-[3px] bg-[#f66f5c]"></span>
+          <span className=" font-[Playwrite_CA] font-thin lg:py-5">I'm {name.split(' ')[0]}</span>
+            <motion.span
+              className="h-1  bg-[#f66f5c] relative left-[-250px] rounded-full m-auto"
+              initial={{ width: "8px" }}   // Small dot
+              animate={{ width: "250px" }} // Expands to a line
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            />
+          <span className="w-[150px] h-[3px] "></span>
         </p>
         <h1 className="font-bold text-4xl lg:text-6xl">Web Developer</h1>
         <div className=" flex justify-center lg:justify-start gap-5 lg:my-8">
-          <Button label={"Project"}/>
-          <Button label={"Resume"} dark/>
+          <a href="#projects"><Button label={"My Best Projects"}/></a>
+          <a href={resume}><Button label={"View Resume"} dark/></a>
         </div>
       </div>
       {/*image*/}
@@ -42,18 +49,19 @@ function Hero({name, avatar}) {
         <span className={
           `absolute h-[310px] w-[310px] lg:w-[495px] lg:h-[495px] 2xl:w-[635px] 2xl:h-[635px] outline-[1px] lg:outline-[2px] outline-red-200 top-[50%] left-[50%] translate-[-50%] rounded-full`
         }></span>
+
         {/*
         */}
 
         <span className={
           `absolute h-[300px] w-[300px] lg:w-[480px] lg:h-[480px] 2xl:w-[600px] 2xl:h-[600px] 
           border-[20px] lg:border-[35px] border-t-0 border-r-0 rotate-[-70deg] 
-          top-[50%] z-1000 left-[50%] translate-[-50%] lg:border-r-0 border-[#f66f5c] lg:border-b-0 lg:rotate-[200deg] rounded-full`
+          top-[50%] z-0 left-[50%] translate-[-50%] lg:border-r-0 border-[#f66f5c] lg:border-b-0 lg:rotate-[200deg] rounded-full`
         }></span>
         <span className={
           `absolute h-[300px] w-[300px] lg:w-[480px] lg:h-[480px] 2xl:w-[600px] 2xl:h-[600px] 
           border-[20px] lg:border-[35px] border-t-0 border-r-0 rotate-[-30deg] 
-          top-[50%] z-1000 left-[50%] translate-[-50%] lg:border-r-0 border-[#f66f5c] lg:border-b-0 lg:rotate-[-130deg] rounded-full`
+          top-[50%] z-1 left-[50%] translate-[-50%] lg:border-r-0 border-[#f66f5c] lg:border-b-0 lg:rotate-[-130deg] rounded-full`
         }></span>
         {/*
         */}
@@ -81,7 +89,7 @@ function Hero({name, avatar}) {
             backgroundPosition:'center center',
             backgroundRepeat:'no-repeat',
           }}
-          className={`flex rounded-full  z-10 w-[220px] h-[300px] lg:w-[90%] lg:h-[420px] 2xl:w-[530px] 2xl:h-[530px] bg-cover `}>
+          className={`flex rounded-full  z-0 w-[220px] h-[300px] lg:w-[90%] lg:h-[420px] 2xl:w-[530px] 2xl:h-[530px] bg-cover `}>
         </div>
       </div>
     </div>
