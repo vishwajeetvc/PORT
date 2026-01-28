@@ -1,4 +1,4 @@
-import img from "./img.webp";
+import img from "./img2.webp";
 import ps from "./ps.png";
 import team from "./team.png";
 import dev from "./dev.png";

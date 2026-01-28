@@ -36,8 +36,8 @@ function ProjectDes({project, className}){
         </div>
         <p className=" pt-4 lg:pt-5 text-justify leading-[28px] text-white/70">{project.about}</p>
         <div className="pt-5 flex gap-5 items-center">
-            <a className="bg-orange-400/60 px-4 py-2" href={project.githubLink}>Github</a>
-             <a className="px-4 py-1" href={project.liveLink}>Live Demo <span className="text-xl text-white/80 inline-block rotate-[-40deg]">➔</span></a>
+            {project.githubLink && <a className="bg-orange-400/60 px-4 py-2" href={project.githubLink}>Github</a>}
+             {project.liveLink && <a className="px-4 py-1" href={project.liveLink}>Live Demo <span className="text-xl text-white/80 inline-block rotate-[-40deg]">➔</span></a>}
         </div>
     </motion.div>
 }
